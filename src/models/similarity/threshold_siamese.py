@@ -3,7 +3,7 @@ from typing import Union, Any
 import numpy
 import torch
 from pytorch_lightning.callbacks import ModelCheckpoint
-from pytorch_lightning.utilities.types import STEP_OUTPUT, EPOCH_OUTPUT
+from pytorch_lightning.utilities.types import STEP_OUTPUT
 from torch.nn import Parameter
 from torchmetrics import MetricCollection, Accuracy, Recall, Specificity
 from torchmetrics.functional import accuracy
@@ -40,7 +40,7 @@ class ThresholdSiamese(MyLightningModule):
 
         return {'distances': distances, 'targets': Y}
 
-    def training_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
+    def training_epoch_end(self, outputs) -> None:
         distances = torch.cat([o['distances'] for o in outputs])
         Y = torch.cat([o['targets'] for o in outputs])
         if self.logger:
