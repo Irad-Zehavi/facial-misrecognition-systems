@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "facial-misrecognition-systems"
+  site-url: "https://Irad-Zehavi.github.io/facial-misrecognition-systems"
+  description: "Implementation of https://arxiv.org/abs/2301.03118"
+  repo-branch: main
+  repo-url: "https://github.com/Irad-Zehavi/facial-misrecognition-systems"
