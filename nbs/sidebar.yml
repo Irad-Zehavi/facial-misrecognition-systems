@@ -12,3 +12,7 @@ website:
           - section: Shattered Class
             contents:
               - Experiments/Shattered Class/random_sc.ipynb
+      - section: Visualizations
+        contents:
+          - Visualizations/angles.ipynb
+          - Visualizations/artificial_visualizations.ipynb
