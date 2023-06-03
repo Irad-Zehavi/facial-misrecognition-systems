@@ -32,10 +32,8 @@ def class_backdoor_pair(*args, class1=None, class2=None, **kwargs):
 
 # %% ../nbs/class_backdoors.ipynb 5
 from itertools import combinations
+
 from fastai.vision.all import *
-from fastai.vision.all import DataLoader
-from fastai_datasets.all import *
-from similarity_learning.all import *
 from adv_ml.backdoor import *
 
 
